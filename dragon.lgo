@@ -14,10 +14,10 @@ to draw :time :limit
   if :time > :limit [stop]
   setpencolor :time
   fd 50
-  dragon (1000 * (exp time)) 45 3
+  dragon (1000 * (exp :time)) 45 3
   draw (:time + 1) :limit
 end
   
-pu
+pd
 rt 90
 
