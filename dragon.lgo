@@ -17,5 +17,7 @@ to draw :len :angle
   pu
 end	
 
-pu
-dragon 100 0 200
+pd
+to test
+  ifelse (2 > 1) (fd 50) (rt 90)
+end
