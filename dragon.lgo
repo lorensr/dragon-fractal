@@ -5,7 +5,7 @@ to dragon :len :angle :limit
 end
 
 to recur :len :angle :limit
-  if (:len < limit) [stop]
+  if (:len < :limit) [stop]
   dragon (:len / 2) (:angle + 45) :limit
   dragon (:len / 2) (:angle - 45) :limit
 end
