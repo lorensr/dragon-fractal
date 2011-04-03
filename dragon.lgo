@@ -10,14 +10,14 @@ to recur :len :angle :limit
   rt :angle
 end
 
-to draw :time :limit
+to draw :time :limit :space
   if :time > :limit [stop]
   setpencolor :time
   pd
   dragon (1000 * (exp :time)) 45 3
   pu
-  fd 100
-  draw (:time + 1) :limit
+  fd :space
+  draw (:time + 1) :limit :space
 end
   
 rt 90
