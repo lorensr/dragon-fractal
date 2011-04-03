@@ -1,2 +1,7 @@
 (setpencolor 99 99 0)
-pd fd 100
+
+to base
+  pd fd 100
+end
+
+base
