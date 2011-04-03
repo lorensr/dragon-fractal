@@ -19,5 +19,6 @@ end
 
 pd
 to test
-  ifelse (2 > 1) (fd 50) (rt 90)
+  ifelse 2 > 1 [fd 50] [rt 90]
 end
+
