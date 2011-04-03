@@ -1,7 +1,7 @@
 (setpencolor 99 99 0)
 
-to base
-  pd fd 100
+to base :i :limit
+  pd fd :limit
 end
 
-base
+base 1 400
