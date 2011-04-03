@@ -19,7 +19,8 @@ to draw :time :limit :space
   fd :space
   draw (:time + 1) :limit :space
 end
-  
+
+pu
 rt -90
 fd 400
 rt 180
