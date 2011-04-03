@@ -1,24 +1,17 @@
 (setpencolor 99 99 0)
 
 to dragon :len :angle :limit
-  ifelse :len < :limit [draw :len :angle] [recur :len :angle :limit]
+  ifelse :len < :limit [fd :len] [recur :len :angle :limit]
 end
 
 to recur :len :angle :limit
-  dragon (:len / 2) (:angle + 45) :limit
-  dragon (:len / 2) (:angle - 45) :limit
-end
-
-to draw :len :angle
-  pd
   rt :angle
-  fd :len
-  pu
-end	
-
-pu
-
-to test :a
-  ifelse 2 > 1 [fd (:a / 2)] [rt 90]
+  dragon (:len / 2) 45 :limit
+  rt (:angle * -2)
+  dragon (:len / 2) -45 :limit
+  rt :angle
 end
+
+pd
+
 
