@@ -22,8 +22,8 @@ end
 
 pu
 rt -90
-fd 400
+fd 500
 rt 180
 
-draw 0 4 0
+draw 0 5 0
 
